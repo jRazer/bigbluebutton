@@ -9,8 +9,6 @@ return [
 
     /**
      * For Multiple BigBlueButton Server Configurations
-     * For Each server you must be specify salt and url with define server name
-     * Note : if you want to used multiple server configuration you must specify servername.
      */
     'servers' => [
         'server1' => [
@@ -65,9 +63,7 @@ return [
          * events in the session for later playback. The default is false.
          *
          * In order for a playback file to be generated, a moderator must click the Start/Stop Recording
-         * button at least once during the session; otherwise, in the absence of any recording marks,
-         * the record and playback scripts will not generate a playback file.
-         * See also the autoStartRecording and allowStartStopRecording parameters
+         * button at least once during the session; otherwise, in the absence of any recording marks
          * var @bool
          */
         'record'                             => false,
@@ -102,41 +98,32 @@ return [
          * When this parameter is true, the recording UI in BigBlueButton will be initially active.
          * Moderators in the session can still pause and restart recording using the UI control.
          *
-         * NOTE: Don’t pass autoStartRecording=false and allowStartStopRecording=false
-         * the moderator won’t be able to start recording!
-         *
          * var @bool
          */
         'autoStartRecording'                 => false,
 
         /**
          * Allow the user to start/stop recording. (default true)
-         * If you set both allowStartStopRecording=false and autoStartRecording=true,
-         * then the entire length of the session will be recorded,
-         * and the moderators in the session will not be able to pause/resume the recording.
-         *
          * var @bool
          */
         'allowStartStopRecording'            => true,
 
         /**
          * Setting webcamsOnlyForModerator=true will cause all webcams
-         * shared by viewers during this meeting to only appear for moderators (added 1.1).
+         * shared by viewers during this meeting to only appear for moderators 
          *
          * var @bool
          */
         'webcamsOnlyForModerator'            => false,
 
         /**
-         * Setting logo=http://www.example.com/my-custom-logo.png will replace
-         * the default logo in the Flash client. (added 2.0).
-         *
+         * Setting logo=http://www.example.com/my-custom-logo.png 
          * var @string
          */
         'logo'                               => null,
 
         /**
-         * Will set the banner text in the client. (added 2.0).
+         * Will set the banner text in the client.
          *
          * var @string
          */
@@ -144,15 +131,14 @@ return [
 
         /**
          * Will set the banner background color in the client.
-         * The required format is color hex #FFFFFF. (added 2.0).
+         * The required format is color hex #FFFFFF.
          *
          * var @string
          */
         //'bannerColor'                        => null,
 
         /**
-         * Setting copyright=My custom copyright will replace
-         * the default copyright on the footer of the Flash client. (added 2.0).
+         * Setting copyright=My custom copyright
          *
          * var @string
          */
@@ -175,7 +161,7 @@ return [
 
         /**
          *  Default lockSettingsDisableCam=false.
-         * Setting lockSettingsDisableCam=true will prevent users from sharing their camera in the meeting. (added 2.2).
+         * Setting lockSettingsDisableCam=true will prevent users from sharing their camera in the meeting.
          *
          * var @bool
          */
@@ -183,7 +169,7 @@ return [
 
         /**
          * Default lockSettingsDisableMic=false.
-         * Setting to lockSettingsDisableMic=true will only allow user to join listen only. (added 2.2).
+         * Setting to lockSettingsDisableMic=true will only allow user to join listen only.
          *
          * var @bool
          */
@@ -191,7 +177,7 @@ return [
 
         /**
          * Default lockSettingsDisablePrivateChat=false.
-         * Setting to lockSettingsDisablePrivateChat=true will disable private chats in the meeting. (added 2.2).
+         * Setting to lockSettingsDisablePrivateChat=true will disable private chats in the meeting. 
          *
          * var @bool
          */
@@ -199,7 +185,7 @@ return [
 
         /**
          * Default lockSettingsDisablePublicChat=false.
-         * Setting to lockSettingsDisablePublicChat=true will disable public chat in the meeting. (added 2.2).
+         * Setting to lockSettingsDisablePublicChat=true will disable public chat in the meeting.
          *
          * var @bool
          */
@@ -207,7 +193,7 @@ return [
 
         /**
          * Default lockSettingsDisableNote=false.
-         * Setting to lockSettingsDisableNote=true will disable notes in the meeting. (added 2.2).
+         * Setting to lockSettingsDisableNote=true will disable notes in the meeting. 
          *
          * var @bool
          **/
@@ -215,7 +201,7 @@ return [
 
         /**
          * Default lockSettingsLockedLayout=false.
-         * Setting to lockSettingsLockedLayout=true will lock the layout in the meeting. (added 2.2).
+         * Setting to lockSettingsLockedLayout=true will lock the layout in the meeting.
          *
          * var @bool
          */
@@ -223,7 +209,7 @@ return [
 
         /**
          * Default lockSettingsLockOnJoin=true.
-         * Setting to lockSettingsLockOnJoin=false will not apply lock setting to users when they join. (added 2.2).
+         * Setting to lockSettingsLockOnJoin=false will not apply lock setting to users when they join.
          *
          * var @bool
          */
@@ -231,7 +217,7 @@ return [
 
         /**
          * Default lockSettingsLockOnJoinConfigurable=false.
-         * Setting to lockSettingsLockOnJoinConfigurable=true will allow applying of lockSettingsLockOnJoin param. (added 2.2).
+         * Setting to lockSettingsLockOnJoinConfigurable=true will allow applying of lockSettingsLockOnJoin param
          *
          * var @bool
          */
